@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC>
+<html>
+
+<head>
+    <title>YNOV Challenge</title>
+</head>
+
+<script>
+    function passvalues(){
+        var nom = document.getElementById("nom").value;
+        var prenom = document.getElementById("prenom").value;
+        var email = document.getElementById("email").value;
+        var tel = document.getElementById("tel").value;
+        var numeroid = document.getElementById("numeroid").value;
+        var ordonnance = document.getElementById("ordonnance").value;
+        localStorage.setItem("nom",nom);
+        localStorage.setItem("prenom",prenom);
+        localStorage.setItem("email",email);
+        localStorage.setItem("tel",tel);
+        localStorage.setItem("numeroid",numeroid);
+        localStorage.setItem("ordonnance",ordonnance);
+    }
+
+</script>
+
+<body>
+    <div>
+        <h1 style="text-align: center;">
+            GLOTH
+        </h1>
+    </div>
+
+    <div>
+        <form action="resultat.html">
+            <div>
+                <label style="padding-left: 20px;" for="example-text-input" >Nom</label>
+                <div >
+                    <input  type="text" id="nom" required>
+                </div>
+            </div>
+            <div >
+                <label style="padding-left: 20px;" for="example-search-input" >Prénom</label>
+                <div >
+                    <input  type="text" id="prenom" required>
+                </div>
+            </div>
+            <div >
+                <label style="padding-left: 20px;" for="example-email-input" >Email</label>
+                <div >
+                    <input  type="email" placeholder="name.surname@example.com" id="email" required>
+                </div>
+            </div>
+
+            <div >
+                <label style="padding-left: 20px;" for="example-tel-input" >Téléphone</label>
+                <div >
+                    <input type="tel" id="tel" required>
+                </div>
+            </div>
+
+            <div >
+                <label style="padding-left: 20px;" for="example-number-input" >Numéro d’identification du médecin</label>
+                <div >
+                    <input  type="number" id="numeroid" required>
+                </div>
+            </div>
+            <div ></div>
+                <label style="padding-left: 20px;" for="example-search-input" >Corps de l'ordonnance</label>
+                <div >
+                        <textarea  type="textarea" id="ordonnance" required></textarea>
+                </div>
+                
+            </div>
+                    
+                
+        </div>
+
+            <button type="submit" onclick="passvalues();">Valider</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

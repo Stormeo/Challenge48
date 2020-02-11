@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC>
+<html>
+
+<head>
+    <title>YNOV Challenge</title>
+</head>
+
+<body>
+    <div id="title">
+        <h1 style="text-align: center;">
+            GLOTH 
+        </h1>
+        <br>
+        <br>
+       
+    </div>
+
+    <div id="res">
+            <h3 style="padding-left: 50px;">
+                ORDONANCE
+            </h3>
+        
+            <p style="font-weight: bold;" >Nom:</p>
+            <p style="padding-left: 20px;" id="resultNom"></p>
+            <p style="font-weight: bold;" >Prénom:</p>
+            <p style="padding-left: 20px;" id="resultPrenom"></p>
+            <p style="font-weight: bold;" >Email:</p>
+            <p style="padding-left: 20px;" id="resultEmail"></p>
+            <p style="font-weight: bold;" >Téléphone:</p>
+            <p style="padding-left: 20px;" id="resultTel"></p>
+            <p style="font-weight: bold;" >Numéro d’identification du médecin:</p>
+            <p style="padding-left: 20px;" id="resultNumeroid"></p>
+            <p style="font-weight: bold;" >Corp de l'ordonancce:</p>
+            <p style="padding-left: 20px;" id="resultOrdonnance"></p>
+    </div>
+
+    <div>
+        <script>
+            document.getElementById("resultNom").innerHTML=localStorage.getItem("nom");
+            document.getElementById("resultPrenom").innerHTML=localStorage.getItem("prenom");
+            document.getElementById("resultEmail").innerHTML=localStorage.getItem("email");
+            document.getElementById("resultTel").innerHTML=localStorage.getItem("tel");
+            document.getElementById("resultNumeroid").innerHTML=localStorage.getItem("numeroid");
+            document.getElementById("resultOrdonnance").innerHTML=localStorage.getItem("ordonnance");
+        </script>
+    </div>
+</body>
+
+</html>
